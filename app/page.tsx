@@ -5,7 +5,7 @@ import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
 import { ProjectsSection } from "@/components/projects-section"
 import { TimelineSection } from "@/components/timeline-section"
-import { BrochuresSection } from "@/components/brochures-section"
+//import { BrochuresSection } from "@/components/brochures-section"
 import { BrandsSection } from "@/components/brands-section"
 import { FoundersSection } from "@/components/founders-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
@@ -30,8 +30,8 @@ export default function HomePage() {
         <BrandsSection />
         <FoundersSection />
         <TestimonialsSection />
-        <WhyChooseUsSection />
-        <BrochuresSection />
+        <WhyChooseUsSection /> 
+        {/* <BrochuresSection /> */}
         <ContactSection />
         <Footer />
       </main>

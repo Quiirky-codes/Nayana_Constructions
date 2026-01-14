@@ -23,17 +23,8 @@ export function ProjectsSection() {
 
   const projects = {
     residential: [
-      { 
-        id: 1,
-        title: "Residential Space",
-        location: "Mahalakshmi Layout, Bengaluru",
-        year: "2025",
-        area: "3,600 sq ft",
-        image: IMAGES.projects.residential[0],
-        description: "A modern home designed for comfort and style.",
-      },
       {
-        id: 2,
+        id: 1,
         title: "Residential Space",
         location: "Kengeri, Bengaluru",
         year: "2025",
@@ -42,7 +33,7 @@ export function ProjectsSection() {
         description: "A warm and welcoming space crafted for peaceful living",
       },
       {
-        id: 3,
+        id: 2,
         title: "Residential Space",
         location: "Gowdanapalya, Bengaluru",
         year: "2024",
@@ -51,7 +42,7 @@ export function ProjectsSection() {
         description: "Functional, fresh, and designed for easy living.",
       },
       {
-        id: 4,
+        id: 3,
         title: "Residential Space",
         location: "Gowdanapalya, Bengaluru",
         year: "2023",
@@ -60,7 +51,7 @@ export function ProjectsSection() {
         description: "Crafted with care to suit today's lifestyle needs.",
       },
       {
-        id: 5,
+        id: 4,
         title: "Residential Space",
         location: "Nelamangala, Bengaluru",
         year: "2021",
@@ -69,7 +60,7 @@ export function ProjectsSection() {
         description: "A home that blends modern design with homely charm.",
       },
       {
-        id: 6,
+        id: 5,
         title: "Residential Space",
         location: "PP Nagar, Bengaluru",
         year: "2020",
@@ -78,7 +69,7 @@ export function ProjectsSection() {
         description: "A compact yet inviting house for comfortable urban life.",
       },
       {
-        id: 7,
+        id: 6,
         title: "Rental Space",
         location: "Gowdanapalya, Bengaluru",
         year: "2019",
@@ -87,7 +78,7 @@ export function ProjectsSection() {
         description: "A thoughtfully designed 5,100 sq ft rental space built to meet contemporary needs.",
       },
       {
-        id: 8,
+        id: 7,
         title: "Rental Space",
         location: "Gowdanapalya, Bengaluru",
         year: "2018",
@@ -96,7 +87,7 @@ export function ProjectsSection() {
         description: "A spacious rental property designed for comfort and modern living.",
       },
       {
-        id: 9,
+        id: 8,
         title: "Residential Space",
         location: "Vajarahalli, Bengaluru",
         year: "2016",
@@ -105,7 +96,7 @@ export function ProjectsSection() {
         description: "A simple, elegant home made for lasting memories.",
       },
       {
-        id: 10,
+        id: 9,
         title: "Residential Space",
         location: "Puttenahalli, Bengaluru",
         year: "2015",
@@ -113,11 +104,19 @@ export function ProjectsSection() {
         image: IMAGES.projects.residential[9],
         description: "Designed with thoughtful layouts for hassle-free living.",
       },
-      
+      { 
+        id: 10,
+        title: "Residential Space",
+        location: "Mahalakshmi Layout, Bengaluru",
+        year: "2014",
+        area: "3,600 sq ft",
+        image: IMAGES.projects.residential[0],
+        description: "A modern home designed for comfort and style.",
+      },
       {
         id: 11,
         title: "Residential Space",
-        location: "Marthahalli, Bengaluru",
+        location: "Marathahalli, Bengaluru",
         year: "2014",
         area: "3,600 sq ft",
         image: IMAGES.projects.residential[10],
