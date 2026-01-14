@@ -9,22 +9,23 @@ export const IMAGES = {
   // Project Images
   projects: {
     residential: [
-      "/images/projects/gowdanapalya.jpeg",
-      "/images/projects/gowdanapalya1.jpeg",
+      "/images/projects/mahalakshmilayout.jpeg",
       "/images/projects/kengeri.jpeg",
-      "/images/projects/marthahalli.JPG",
-      "/images/projects/nelamangala.jpeg",
-      "/images/projects/nobanagar.JPG",
-      "/images/projects/ppnagar.jpg",
-      "/images/projects/puttenahalli.jpeg",
-      "/images/projects/vajarahalli.jpeg",
-      "/images/projects/gowdanapalya2.jpeg",
-      "/images/projects/nobanagar2.JPG",
       "/images/projects/gowdanapalya4.jpeg",
+      "/images/projects/gowdanapalya2.jpeg",
+      "/images/projects/nelamangala.jpeg",
+      "/images/projects/ppnagar.jpg",
+      "/images/projects/gowdanapalya1.jpeg",
+      "/images/projects/gowdanapalya.jpeg",
+      "/images/projects/vajarahalli.jpeg",
+      "/images/projects/puttenahalli.jpeg",
+      "/images/projects/marthahalli.JPG",
+      "/images/projects/nobanagar.JPG",
+      "/images/projects/nobanagar2.JPG",
       "/images/projects/nobanagar3.JPG",
     ],
     commercial: [
-      "/images/projects/rrnagarcommericial.jpg",
+      "/images/projects/rrnagarcommericial.jpeg",
     ],
   },
 
@@ -72,7 +73,7 @@ export const SOCIAL_LINKS = {
 }
 
 export const CONTACT_INFO = {
-  phone: "+91 98440 31696",
+  phone: "+91 81528 63866",
   email: "nayanaconstruction1@gmail.com",
   address: "#455, 10th Cross Road, Gowdanapalya, Near Durgamma Temple, Bengaluru - 560061",
 }

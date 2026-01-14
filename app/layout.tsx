@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   description:
     "Leading construction company in Bengaluru with 30+ years of experience and 30+ successful projects. Specializing in residential and commercial construction.",
   generator: "v0.app",
+  icons: {
+    icon: "/images/nayana-logo.jpeg",
+    shortcut: "/images/nayana-logo.jpeg",
+    apple: "/images/nayana-logo.jpeg",
+  },
 }
 
 export default function RootLayout({

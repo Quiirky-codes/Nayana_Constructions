@@ -42,7 +42,7 @@ export function LoadingScreen() {
                 />
               </div>
               <h1 className="text-2xl font-bold text-primary">Nayana Constructions</h1>
-              <p className="text-muted-foreground">Building Dreams Since 1990</p>
+              <p className="text-muted-foreground">Building Dreams Since 1994</p>
             </motion.div>
 
             <motion.div

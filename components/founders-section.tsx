@@ -8,7 +8,7 @@ export function FoundersSection() {
   const founders = [
     {
       name: "R. Muniraju Reddy",
-      title: "Business Owner and Founder",
+      title: "Founder & Director",
       image: IMAGES.founders.founder2,
       description:
         "With over 30 years of experience in construction and project management, Mr. R. Muniraju Reddy has led Nayana Constructions to become one of Bengaluru's most trusted construction companies. His vision for quality and innovation drives every project.",
@@ -18,7 +18,7 @@ export function FoundersSection() {
     },
     {
       name: "Vinay M Reddy",
-      title: "Business Owner",
+      title: "Executing Officer",
       image: IMAGES.founders.founder1,
       description:
         "Carrying forward his father’s legacy, Mr. Vinay M Reddy brings a fresh outlook, creativity, and keen attention to detail. With his commerce background, he combines smart management with a passion for crafting construction projects that are efficient, elegant, and enduring.",

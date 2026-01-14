@@ -5,7 +5,7 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { MapPin, Calendar, Square, Eye, ArrowRight } from "lucide-react"
+import { MapPin, Calendar, Square, Eye, ArrowRight, X } from "lucide-react"
 import { IMAGES } from "@/constants/images"
 import { AnimatedSection, AnimatedText, AnimatedCardGrid } from "./animated-section"
 
@@ -19,134 +19,148 @@ const generateCardTransforms = (count: number) => {
 
 export function ProjectsSection() {
   const [activeTab, setActiveTab] = useState<"residential" | "commercial">("residential")
+  const [expandedImage, setExpandedImage] = useState<string | null>(null)
 
   const projects = {
     residential: [
-      {
+      { 
         id: 1,
-        title: "Rental Space",
-        location: "Gowdanapalya, Bengaluru",
-        year: "2018",
-        area: "2000 sq ft",
+        title: "Residential Space",
+        location: "Mahalakshmi Layout, Bengaluru",
+        year: "2025",
+        area: "3,600 sq ft",
         image: IMAGES.projects.residential[0],
-        description: "A spacious rental property designed for comfort and modern living.",
+        description: "A modern home designed for comfort and style.",
       },
       {
         id: 2,
-        title: "Rental Space",
-        location: "Gowdanapalya, Bengaluru",
-        year: "2019",
-        area: "1,200 sq ft",
+        title: "Residential Space",
+        location: "Kengeri, Bengaluru",
+        year: "2025",
+        area: "2,969 sq ft",
         image: IMAGES.projects.residential[1],
-        description: "A thoughtfully designed 1200 sq ft rental space built to meet contemporary needs.",
+        description: "A warm and welcoming space crafted for peaceful living",
       },
       {
         id: 3,
         title: "Residential Space",
-        location: "Kengeri, Bengaluru",
-        year: "2025",
-        area: "1,215 sq ft",
+        location: "Gowdanapalya, Bengaluru",
+        year: "2024",
+        area: "3,600 sq ft",
         image: IMAGES.projects.residential[2],
-        description: "A warm and welcoming space crafted for peaceful living",
+        description: "Functional, fresh, and designed for easy living.",
       },
       {
         id: 4,
         title: "Residential Space",
-        location: "Marthahalli, Bengaluru",
-        year: "2014",
-        area: "1,200 sq ft",
+        location: "Gowdanapalya, Bengaluru",
+        year: "2023",
+        area: "4,800 sq ft",
         image: IMAGES.projects.residential[3],
-        description: "Built with simplicity and practicality at heart for everyday comfort.",
+        description: "Crafted with care to suit today's lifestyle needs.",
       },
       {
         id: 5,
         title: "Residential Space",
         location: "Nelamangala, Bengaluru",
         year: "2021",
-        area: "1,350 sq ft",
+        area: "4,320 sq ft",
         image: IMAGES.projects.residential[4],
         description: "A home that blends modern design with homely charm.",
       },
       {
         id: 6,
         title: "Residential Space",
-        location: "Noba Nagar, Bengaluru",
-        year: "2013",
-        area: "2,400 sq ft",
-        image: IMAGES.projects.residential[5],
-        description: "Spacious interiors designed to bring families together.",
-      },
-      {
-        id: 7,
-        title: "Residential Space",
         location: "PP Nagar, Bengaluru",
         year: "2020",
-        area: "1,200 sq ft",
-        image: IMAGES.projects.residential[6],
+        area: "2,610.75 sq ft",
+        image: IMAGES.projects.residential[5],
         description: "A compact yet inviting house for comfortable urban life.",
       },
       {
+        id: 7,
+        title: "Rental Space",
+        location: "Gowdanapalya, Bengaluru",
+        year: "2019",
+        area: "5,100 sq ft",
+        image: IMAGES.projects.residential[6],
+        description: "A thoughtfully designed 5,100 sq ft rental space built to meet contemporary needs.",
+      },
+      {
         id: 8,
-        title: "Residential Space",
-        location: "Puttenahalli, Bengaluru",
-        year: "2015",
-        area: "1,200 sq ft",
+        title: "Rental Space",
+        location: "Gowdanapalya, Bengaluru",
+        year: "2018",
+        area: "8,000 sq ft",
         image: IMAGES.projects.residential[7],
-        description: "Designed with thoughtful layouts for hassle-free living.",
+        description: "A spacious rental property designed for comfort and modern living.",
       },
       {
         id: 9,
         title: "Residential Space",
         location: "Vajarahalli, Bengaluru",
         year: "2016",
-        area: "1,200 sq ft",
+        area: "3,000 sq ft",
         image: IMAGES.projects.residential[8],
         description: "A simple, elegant home made for lasting memories.",
       },
       {
         id: 10,
         title: "Residential Space",
-        location: "Gowdanapalya, Bengaluru",
-        year: "2023",
-        area: "1,200 sq ft",
+        location: "Puttenahalli, Bengaluru",
+        year: "2015",
+        area: "2,400 sq ft",
         image: IMAGES.projects.residential[9],
-        description: "Crafted with care to suit today’s lifestyle needs.",
+        description: "Designed with thoughtful layouts for hassle-free living.",
       },
+      
       {
         id: 11,
         title: "Residential Space",
-        location: "Noba Nagar, Bengaluru",
-        year: "2013",
-        area: "1,400 sq ft",
+        location: "Marthahalli, Bengaluru",
+        year: "2014",
+        area: "3,600 sq ft",
         image: IMAGES.projects.residential[10],
-        description: "A homely abode with a touch of traditional warmth.",
+        description: "Built with simplicity and practicality at heart for everyday comfort.",
       },
+      
       {
         id: 12,
         title: "Residential Space",
-        location: "Gowdanapalya, Bengaluru",
-        year: "2024",
-        area: "1,350 sq ft",
+        location: "Noba Nagar, Bengaluru",
+        year: "2013",
+        area: "4,800 sq ft",
         image: IMAGES.projects.residential[11],
-        description: "Functional, fresh, and designed for easy living.",
+        description: "Spacious interiors designed to bring families together.",
       },
       {
         id: 13,
         title: "Residential Space",
         location: "Noba Nagar, Bengaluru",
         year: "2013",
-        area: "1,500 sq ft",
+        area: "2,400 sq ft",
         image: IMAGES.projects.residential[12],
+        description: "A homely abode with a touch of traditional warmth.",
+      },
+      {
+        id: 14,
+        title: "Residential Space",
+        location: "Noba Nagar, Bengaluru",
+        year: "2013",
+        area: "2,400 sq ft",
+        image: IMAGES.projects.residential[13],
         description: "Spacious and airy, built to celebrate togetherness.",
       },
+      
     ],
+
     commercial: [
       {
         id: 14,
         title: "Commercial Complex",
         location: "Raja Rajeshwari Nagar, Bengaluru",
         year: "2012",
-        area: "1500 sq ft",
+        area: "6,400 sq ft",
         image: IMAGES.projects.commercial[0],
         description: "A modern commercial hub crafted to maximize space efficiency and business potential.",
       },
@@ -265,18 +279,24 @@ export function ProjectsSection() {
                       alt={project.title}
                       width={400}
                       height={300}
-                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-125"
+                      className="w-full h-full object-contain transition-all duration-700 bg-muted/30"
                     />
                     
                     {/* Animated Badge */}
-                    <Badge className="absolute top-4 left-4 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1">
+                    <Badge className="absolute top-4 left-4 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground shadow-lg transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-1 z-20">
                       {project.year}
                     </Badge>
                     
                     {/* View Icon that appears on hover */}
-                    <div className="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        setExpandedImage(project.image)
+                      }}
+                      className="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0 z-20 hover:bg-white hover:scale-110"
+                    >
                       <Eye className="w-5 h-5 text-primary" />
-                    </div>
+                    </button>
                     
                     {/* Scan line effect */}
                     <div className="absolute top-0 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent transform translate-y-full group-hover:translate-y-0 transition-transform duration-1000 delay-200"></div>
@@ -338,6 +358,30 @@ export function ProjectsSection() {
         
         {/* Animated bottom border */}
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent animate-pulse"></div>
+
+        {/* Expanded Image Modal */}
+        {expandedImage && (
+          <div 
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm animate-in fade-in duration-300"
+            onClick={() => setExpandedImage(null)}
+          >
+            <div className="relative max-w-7xl max-h-[90vh] w-full h-full p-4 flex items-center justify-center">
+              <Image
+                src={expandedImage}
+                alt="Expanded project view"
+                width={1920}
+                height={1080}
+                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl animate-in zoom-in duration-500"
+              />
+              <button
+                onClick={() => setExpandedImage(null)}
+                className="absolute top-8 right-8 w-12 h-12 bg-white/90 hover:bg-white rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 shadow-lg"
+              >
+                <X className="w-6 h-6 text-gray-800" />
+              </button>
+            </div>
+          </div>
+        )}
       </section>
     </AnimatedSection>
   )

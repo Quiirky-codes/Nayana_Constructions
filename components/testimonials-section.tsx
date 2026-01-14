@@ -14,7 +14,7 @@ export function TestimonialsSection() {
         "Being known to the builders for many years, it was a no-brainer to choose them for constructing our duplex house on a 30*40 site, and they were very resourceful and cooperative. From demolition of the old building to the housewarming of the new one, they took complete responsibility, delivered as promised, and we are very happy and content with the work done.",
     },
     {
-      name: "Chandhan",
+      name: "Chandan",
       project: "Bengaluru",
       rating: 5,
       content:
@@ -42,14 +42,14 @@ export function TestimonialsSection() {
         "We've known Nayana Constructions for decades, and they built our 3-storey house in 2023 within 15 months with impressive accuracy and quality. Open to ideas and offering valuable inputs, Mr. Muniraju and his son Vinay showed dedication, patience, and a collaborative attitude—truly reliable and highly recommended.",
     },
     {
-      name: "Shreeram",
+      name: "Shri Ram",
       project: "Bengaluru",
       rating: 5,
       content:
         "I was introduced to Nayana Constructions, Mr. Muniraju and Vinay 4 years ago and since then haven't needed another contractor. From grills to plumbing, carpentry, and painting, they managed everything efficiently, even finishing remote-site work in a week without supervision. Truly trustworthy, reliable, and deserving recognition.",
     },
     {
-      name: "Shankar Narayan",
+      name: "Shankara Narayan",
       project: "Bengaluru",
       rating: 5,
       content:

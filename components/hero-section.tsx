@@ -343,7 +343,7 @@ export function HeroSection() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.3, duration: 0.8 }}
               >
-                Building Dreams for{" "}
+                Building Dreams from{" "}
               </motion.span>
               
               <span className="text-secondary inline-flex items-baseline relative">

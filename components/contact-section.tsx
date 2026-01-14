@@ -318,7 +318,7 @@ export function ContactSection() {
           {/* Bottom decoration */}
           <div className="mt-16 text-center">
             <div className="inline-block bg-primary/5 rounded-full px-6 py-2">
-              <span className="text-primary/80 text-sm font-medium">We typically respond within 24 hours</span>
+              <span className="text-primary/80 text-sm font-medium">We will respond at the earliest.</span>
             </div>
           </div>
         </div>
